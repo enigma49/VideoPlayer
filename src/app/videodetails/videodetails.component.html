@@ -1,0 +1,47 @@
+<div>
+  <iframe width="100%" height="300px" [src]="video.trailer | safe"> </iframe>
+</div>
+<div>
+  <form>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        name="name"
+        required
+        placeholder="name"
+        [(ngModel)]="video.name"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        name="trailer"
+        required
+        placeholder="trailer link"
+        [(ngModel)]="video.trailer"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        name="poster"
+        required
+        placeholder="Poster"
+        [(ngModel)]="video.poster"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        name="year"
+        required
+        placeholder="Year"
+        [(ngModel)]="video.year"
+      />
+    </div>
+  </form>
+</div>

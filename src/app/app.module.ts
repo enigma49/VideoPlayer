@@ -10,6 +10,7 @@ import { VideolistComponent } from "./videolist/videolist.component";
 import { VideodetailsComponent } from "./videodetails/videodetails.component";
 import { HttpModule } from "@angular/http";
 import { SafePipe } from './safe.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { SafePipe } from './safe.pipe';
     VideodetailsComponent,
     SafePipe
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,8 +1,6 @@
 <ul class="nav nav-pills nav-stacked">
   <li (click)="onSelect(video)" *ngFor="let video of videos">
-    <a
-      ><img [src]="videos.poster | safe" width="150" height="150" /><br />
-      {{ video.name }}</a
-    >
+    <img [src]="video.poster | safe" width="150" height="150" /><br />
+    <a> {{ video.name }}</a>
   </li>
 </ul>

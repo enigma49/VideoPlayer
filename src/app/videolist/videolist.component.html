@@ -2,5 +2,9 @@
   <li (click)="onSelect(video)" *ngFor="let video of videos">
     <img [src]="video.poster | safe" width="150" height="150" /><br />
     <a> {{ video.name }}</a>
+    <a
+      ><img [src]="video.poster | safe" width="150" height="150" /><br />
+      {{ video.name }}</a
+    >
   </li>
 </ul>

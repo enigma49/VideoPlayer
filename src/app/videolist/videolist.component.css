@@ -3,7 +3,6 @@ li {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   width: 300px;
   height: 200px;
-  border-radius: 10px;
   border: 1px solid #ccc;
   background: #fff;
   margin: 10px;

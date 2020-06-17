@@ -1,3 +1,22 @@
 <div class="jumbotron">
   <h1>Video Player</h1>
 </div>
+
+<!-- VIDEO CAROUSEL -->
+<div class="container">
+  <ul class="nav nav-pills nav-stacked">
+    <mat-card>
+      <li (click)="onSelect(video)" *ngFor="let video of videos">
+        <img
+          class="image"
+          [src]="video.poster | safe"
+          width="250"
+          height="150"
+        /><br />
+        <mat-card-header>
+          <a class="text"> {{ video.name }}</a>
+        </mat-card-header>
+      </li>
+    </mat-card>
+  </ul>
+</div>
